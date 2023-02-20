@@ -1,0 +1,12 @@
+.enc{
+    grid-template-columns: 49% 49%;
+    display: grid;
+}
+.contenido{
+    display: grid;
+    grid-template-columns: 49% 49%;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
