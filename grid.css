@@ -10,3 +10,8 @@
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }
+
+.ssd{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
