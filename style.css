@@ -3,15 +3,12 @@
 *{
     margin: unset;
     padding: unset;
-
 }
 .pag{
     display: grid;
     background-image: url(img/aaas.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-   
 }
 .enc{
     display: grid;
@@ -29,6 +26,12 @@
     color: rgb(126, 126, 235)
     
 }
+.icon-menu{
+    display: grid;
+    font-size: 4rem;
+    text-shadow: 4px 4px 4px blue;
+    visibility: collapse;
+}
 .botone{
     display: flex;
     position: relative;
@@ -36,8 +39,6 @@
     justify-content: center;
     gap:7%;
     align-items: center;
-
-
 }
 .botone button{
     display: flex;
@@ -51,28 +52,31 @@
     font-family: 'Noto Serif Tamil', serif;
 }
 
+
 .contenido{
-   background-color: rgba(5, 4, 4, 0.534);
-   height: 670px;
+    background-color: rgba(5, 4, 4, 0.534);
+    height: 100%;
 }
 .p1{
     display: flex;
-    height: 55%
+    height: 100%;
 }
 .img{
     display: flex;
     position: relative;
-    height: 95%;
+    height: 85%;
     width: 85%;
     left: 10%;
     justify-self: center;
     top: 5%;
     border-radius: 25px;
+    object-fit: cover;
 }
 .p2{
     display: grid;
-    height: 55%;
+    height: 90%;
     width: 100%;
+   
 }
 .p2 h1{
     display: flex;

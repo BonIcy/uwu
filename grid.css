@@ -1,3 +1,4 @@
+
 .enc{
     grid-template-columns: 49% 49%;
     display: grid;
@@ -6,12 +7,41 @@
     display: grid;
     grid-template-columns: 49% 49%;
 }
-.footer{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+@media (max-width: 850px){
+     .pag{
+            display: grid;
+        }
+    .enc{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+        position: relative;
+    }
+    .botone{
+        visibility:collapse;
+    }
+    .icon-menu{
+        display: flex;
+        visibility:visible;
+        align-items: center;
+        cursor: pointer;
+        padding-left: 2rem
+    }
+    .contenido{
+        display: grid;
+        grid-template-columns: 100%;
+    }
 }
 
-.ssd{
+
+
+
+    .footer{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    }
+
+    .ssd{
     display: grid;
     grid-template-columns: 70% 30%;
 }
