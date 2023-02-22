@@ -11,6 +11,8 @@
      .pag{
             display: grid;
         }
+
+       
     .enc{
         display: grid;
         grid-template-columns: 100%;
@@ -30,6 +32,26 @@
     .contenido{
         display: grid;
         grid-template-columns: 100%;
+        width: 100%;
+    }
+    .p2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+ 
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: 30vh;     
+        gap: 10%;
+    }
+
+    .ssd{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -37,11 +59,13 @@
 
 
     .footer{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     }
 
     .ssd{
-    display: grid;
-    grid-template-columns: 70% 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

@@ -7,7 +7,7 @@
 .pag{
     display: grid;
     background-image: url(img/aaas.jpg); 
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .enc{
@@ -70,12 +70,12 @@
     justify-self: center;
     top: 5%;
     border-radius: 25px;
-    object-fit: cover;
+    object-fit: contain;
 }
 .p2{
     display: grid;
     height: 90%;
-    width: 100%;
+    width: 50%;
    
 }
 .p2 h1{
@@ -121,13 +121,14 @@
 .boto{
     display: flex;
     position: relative;
-    justify-content: flex-end;
+    align-self: flex-end;
     right: 7%;
     top: 15%;
 }
 .boto button{
     display: flex;
     cursor: pointer;
+
     justify-content: center;
     height: 50px;
     width: 150px;
@@ -140,10 +141,10 @@
     font-family: 'Source Serif Pro', serif;
 }
 .footer{
-    display: flex;
+
     background: rgba(0, 0, 0, 0.651);
     color: wheat;
-    position: relative;
+    
 }
 .copy{
     display: flex;
