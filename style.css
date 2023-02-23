@@ -50,7 +50,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: #2543ba3c;
+      background: #03084b07;
       transform: translateX(-100vw);
       transition: 0.5s;
       z-index: 1;
@@ -76,7 +76,7 @@
       list-style:none;
       padding: 0;
       margin: 0;
-      background: #2542baa9;
+      background: #03084b;
       
     
     }
@@ -131,7 +131,7 @@
     display: grid;
     font-size: 4rem;
     text-shadow: 4px 4px 4px rgba(0, 193, 236, 0.628);
-    background: #2543bacc;
+    background:  #03084b;
     color: rgb(113, 7, 136);
 }
 .botone{
