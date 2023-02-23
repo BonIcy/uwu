@@ -3,20 +3,21 @@
 *{
     margin: unset;
     padding: unset;
+    border: 0;
 }
 .pag{
     display: grid;
     background-image: url(img/aaas.jpg); 
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .enc{
     display: grid;
     width: 100%;
     height: 100%;
-    background: rgba(1, 63, 145, 0.651);
+    background: #2542baa9;
 }
-.enc .logo{
+#logo{
     display: flex;
     font-size: 2.5rem;
     height: 100%;
@@ -26,11 +27,112 @@
     color: rgb(126, 126, 235)
     
 }
+/* Estilos comunes */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #02007790;
+    padding: 1rem;
+  }
+  
+  /* Estilos móvil/celular */
+  @media all and (max-width: 700px) {
+  
+    /* Oculta el nav en la parte izquiera */
+    .nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #2543ba3c;
+      transform: translateX(-100vw);
+      transition: 0.5s;
+      z-index: 1;
+    
+    }
+  
+    /* Muestra el nav */
+    .nav--show {
+      transform: translateX(0);
+      font-family: 'Gajraj One', cursive;
+      text-shadow: 5px 3px 4px rgb(254, 239, 255), 9px 5px 6px rgb(23, 229, 236), 4px 3px 7px rgb(146, 106, 179), 9px 7px 1px rgb(0, 247, 255);
+      justify-content: center;
+      color: rgb(126, 126, 235)
+      
+    }
+  
+    .nav__button {
+      text-align: right;
+      margin: 1rem;
+    }
+  
+    .nav__ul {
+      list-style:none;
+      padding: 0;
+      margin: 0;
+      background: #2542baa9;
+      
+    
+    }
+  
+    .nav__link {
+      display: block;
+      padding: 1rem;
+      font-size: 1.5rem;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      
+    }
+  }
+  
+  /* Estilos Escritorio */
+  @media all and (min-width: 701px) {
+  
+    /* Oculta botón de abrir o cerrar */
+    .nav__button,
+    .header__button-nav--open {
+      display: none;
+      text-shadow: 4px 4px 4px blue;
+      border: 0;
+    }
+  
+    /* Adapta el nav en horizontal */
+    .nav__ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      
+    }
+  
+    .nav__link {
+      display: block;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      color: rgb(198, 1, 198);
+      transition: 0.5s;
+      text-shadow: 4px 4px 4px blue;
+      font-family: 'Noto Serif Tamil', serif;
+      
+    }
+  
+    .nav__link:hover {
+      opacity: 0.3;
+    }
+  }
+  
 .icon-menu{
     display: grid;
     font-size: 4rem;
-    text-shadow: 4px 4px 4px blue;
-    visibility: collapse;
+    text-shadow: 4px 4px 4px rgba(0, 193, 236, 0.628);
+    background: #2543bacc;
+    color: rgb(113, 7, 136);
 }
 .botone{
     display: flex;
@@ -44,7 +146,7 @@
     display: flex;
     background-color: transparent;
     border-color: transparent;
-    color: wheat;
+    color: rgb(21, 49, 96);
     font-size: 1.5rem;
     align-self: center;
     justify-content: center;
@@ -75,7 +177,7 @@
 .p2{
     display: grid;
     height: 90%;
-    width: 50%;
+    width: 100%;
    
 }
 .p2 h1{
@@ -121,14 +223,13 @@
 .boto{
     display: flex;
     position: relative;
-    align-self: flex-end;
+    justify-content: flex-end;
     right: 7%;
     top: 15%;
 }
 .boto button{
     display: flex;
     cursor: pointer;
-
     justify-content: center;
     height: 50px;
     width: 150px;
@@ -137,14 +238,14 @@
     color: white;
     text-shadow: 1px 1px 3px lightgreen;
     border-radius: 25px;
-    border-color: rgb(122, 53, 212);
+    border-color: rgb(20, 0, 45);
     font-family: 'Source Serif Pro', serif;
 }
 .footer{
-
+    display: flex;
     background: rgba(0, 0, 0, 0.651);
     color: wheat;
-    
+    position: relative;
 }
 .copy{
     display: flex;

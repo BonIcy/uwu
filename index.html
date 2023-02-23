@@ -7,20 +7,34 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="css/fontello.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Pagina</title>
 </head>
 <body>
     <div class="pag">
-        <header class="enc">
-            <div class="logo"><h1>Yu-Gi-Oh</h1>
-                <h2 class="icon-menu"></h2>
+        <!-- Header -->
+        <header x-data="{ open: false }" class="header">
+            <!-- Logo -->
+            <div class="header__logo"id="logo">
+            Yu-Gi-Oh
             </div>
-            <div class="botone">
-                <button>Información</button>
-                <button>Decks</button>
-                <button>Personajes</button>
-                <button>Combos</button>
+            <!-- Boton abrir -->
+            <button class="header__button-nav--open" x-on:click="open = true"><a class="icon-menu"></a></button>
+            <!-- Navegador -->
+            <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+            <!-- Boton cerrar -->
+            <div class="nav__button" x-on:click="open = false">
+                <button class="header__button-nav--close"><a class="icon-menu"></a></button>
             </div>
+            <!-- Menu -->
+            <ul class="nav__ul">
+                <li class="nav__item"><a href="#" class="nav__link">Personajes.</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Decks.</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Combos.</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Habilidades.</a></li>
+            </ul>
+            </nav>
+            <!-- Fin Navegador -->
         </header>
         <div class="contenido">
             <div class="p1">
@@ -50,7 +64,6 @@
             </div>
             </div>
         </div>
-        <footer>
         <div class="footer">
             <p class="copy">Copyright © 2023.<br> Todos los derechos reservados.</p>
             <div class="iconos">
@@ -66,7 +79,7 @@
                 <p>Youtube: YuGiOhDesmonetizado</p>
             </div>
         </div>
-       </footer>
+       
     </div>
 </body>
 </html>
